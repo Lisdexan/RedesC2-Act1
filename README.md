@@ -1,7 +1,7 @@
 # Redes C2
 ## Actividad 1
 Para ejecutar el proyecto se debe runear desde una virtual box, linux.
-Usando dos terminales en la carpeta con los comandos: `python3 serverF.py localhost 8000 > recibido.txt` y luego `python3 clienteF.py localhost 8000 < archivo.txt`.
+Usando dos terminales en la carpeta con los comandos: `python3 serverF.py localhost 8000 --debug > recibido.txt` y luego `python3 clienteF.py localhost 8000 --debug < archivo.txt`.
 
 El cliente envía archivo.txt usando SocketTCP (Stop & Wait), y el servidor lo guarda en recibido.txt. Para revisar que llegó íntegro se usa `cmp archivo.txt recibido.txt` (si no imprime nada, es idéntico).
 
