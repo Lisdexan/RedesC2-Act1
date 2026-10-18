@@ -8,3 +8,6 @@ El cliente envía archivo.txt usando SocketTCP (Stop & Wait), y el servidor lo g
 Para probar con pérdidas se usa netem: `sudo tc qdisc add dev lo root netem loss 20.0% delay 0.5s`, y al terminar se desactiva con `sudo tc qdisc del dev lo root netem`.
 
 Se necesita tener SocketTCP.py y archivo.txt en la misma carpeta donde se encuentran serverF.py y clienteF.py
+
+
+Los demas Client y Servers (`client.py y client2.py` y `server.py y server2.py`) se usaron para responder las preguntas que se hacian durante la actividad y no son necesarios para probar la parte final.
